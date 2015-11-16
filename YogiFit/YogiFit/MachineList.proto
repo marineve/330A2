@@ -1,0 +1,17 @@
+package YogiFit;
+
+message Machine {
+	required string name = 1;
+	required int32 id = 2;
+
+	enum MachineType {
+		BENCHPRESS = 0;
+		TREADMILL = 1;
+	}
+
+	required MachineType type = 4;
+}
+
+message MachineList {
+	repeated Machine machine = 1;
+}

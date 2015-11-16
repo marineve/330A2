@@ -6,7 +6,7 @@ class TreadMill : public Machine {
 
 public:
 	
-	TreadMill(const int id, const std::string name);
+	TreadMill(const int id, const std::string name, YogiFit::Machine_MachineType type);
 	TreadMill(TreadMill &tm);
 	~TreadMill(){}
 

@@ -7,6 +7,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "YogiFit", "YogiFit\YogiFit.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "YogiFitMain", "YogiFitMain\YogiFitMain.vcxproj", "{3885E0F8-CC31-423F-9DB6-0533DF69E532}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "YogiFitTest", "YogiFitTest\YogiFitTest.vcxproj", "{FC14057A-7B01-4AC0-BE82-D8162E632879}"
+	ProjectSection(ProjectDependencies) = postProject
+		{70456305-33A4-4B35-91C0-29AC1FBB7D2A} = {70456305-33A4-4B35-91C0-29AC1FBB7D2A}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +26,10 @@ Global
 		{3885E0F8-CC31-423F-9DB6-0533DF69E532}.Debug|Win32.Build.0 = Debug|Win32
 		{3885E0F8-CC31-423F-9DB6-0533DF69E532}.Release|Win32.ActiveCfg = Release|Win32
 		{3885E0F8-CC31-423F-9DB6-0533DF69E532}.Release|Win32.Build.0 = Release|Win32
+		{FC14057A-7B01-4AC0-BE82-D8162E632879}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FC14057A-7B01-4AC0-BE82-D8162E632879}.Debug|Win32.Build.0 = Debug|Win32
+		{FC14057A-7B01-4AC0-BE82-D8162E632879}.Release|Win32.ActiveCfg = Release|Win32
+		{FC14057A-7B01-4AC0-BE82-D8162E632879}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

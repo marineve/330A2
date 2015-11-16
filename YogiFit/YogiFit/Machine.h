@@ -2,6 +2,7 @@
 
 #include <string>
 #include <map>
+#include "MachineList.pb.h"
 
 using namespace std;
 static const string enumStrings[] = { "BenchPress", "TreadMill" };
@@ -10,18 +11,17 @@ class Machine {
 	friend class MachineFactory;
 public:
 
-	enum MachineTypes { BenchPress, TreadMill };
-
 	Machine(const int id, const string name);
-	Machine(Machine &m);
+	Machine(const Machine &m);
 	~Machine() {}
 
 	virtual Machine* clone() = 0;
+	const std::string getMachineType() const;
 	const int getMachineID() const;
 	const string getMachineName() const;
+	YogiFit::Machine Machine::getYogiFitMachine() const;
 
-private:
+protected:
 
-	int _machineID;
-	string _machineName;
+	YogiFit::Machine _machine;
 };
