@@ -82,6 +82,11 @@
   <ItemGroup>
     <ClCompile Include="YogiFitMain.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YogiFit\YogiFit.vcxproj">
+      <Project>{70456305-33a4-4b35-91c0-29ac1fbb7d2a}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
