@@ -1,10 +1,13 @@
-// YogiFitTest.cpp : Defines the entry point for the console application.
-//
+/** @file YogiFitTest.cpp This file contains the test functionality for this console application. */
 
 #include "stdafx.h"
 #include "gtest/gtest.h"
 #include "MachineFactory.h"
 
+/**
+* This test validates a BenchPress object created by directly calling the 
+* BenchPress class constructor.
+*/
 TEST(TestBenchPress, TestCreateBenchPress) {
 	int id = 1234;
 	std::string name = "Mrs Peacock";
@@ -15,6 +18,10 @@ TEST(TestBenchPress, TestCreateBenchPress) {
 	ASSERT_EQ(name, newBenchPress.getMachineName());
 }
 
+/**
+* The following test ensures that a Treadmill object created by cloning an 
+* existing Treadmill object has the same values. 
+*/
 TEST(TestTreadmill, TestTreadmillClone) {
 	int id = 1234;
 	std::string name = "Mr Green";
@@ -26,6 +33,10 @@ TEST(TestTreadmill, TestTreadmillClone) {
 	ASSERT_EQ(name, newMachine->getMachineName());
 }
 
+/**
+* This test ensures that an object created with the MachineFactory has the 
+* correct values after initialization.
+*/
 TEST(TestMachineFactory, VerifyResultingMachine) {
 	MachineFactory* machineFactory = new MachineFactory;
 
@@ -40,6 +51,10 @@ TEST(TestMachineFactory, VerifyResultingMachine) {
 	EXPECT_EQ(name, newMachine->getMachineName());
 }
 
+/**
+* The following test validates that an object created by a cloned prototype in the
+* MachineFactory class contains the correct values. 
+*/
 TEST(TestMachineFactory, TestMachineFactoryClone) {
 	MachineFactory* machineFactory = new MachineFactory;
 	Machine* newMachine = nullptr;
@@ -60,6 +75,10 @@ TEST(TestMachineFactory, TestMachineFactoryClone) {
 	EXPECT_EQ(name, newMachine->getMachineName());
 }
 
+/**
+* This test demonstrates that a Machine object created by the MachineFactory with an
+* invalid type will return a nullptr. 
+*/
 TEST(TestMachineFactory, FailWithIncorrectType) {
 	MachineFactory* machineFactory = new MachineFactory;
 	std::string type = "MonkeyBars";

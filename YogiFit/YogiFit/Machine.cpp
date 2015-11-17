@@ -4,6 +4,7 @@ Machine::Machine(const int id, const std::string name) : _machine() {
 	_machine.set_name(name);
 	_machine.set_id(id);
 }
+
 Machine::Machine(const Machine& m) : _machine(m._machine) {}
 
 const std::string Machine::getMachineType() const {
