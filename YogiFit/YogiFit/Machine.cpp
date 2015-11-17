@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "Machine.h"
 
 Machine::Machine(const int id, const std::string name) : _machine() {

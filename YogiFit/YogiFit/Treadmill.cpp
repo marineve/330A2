@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "Treadmill.h"
 
 Treadmill::Treadmill(const int &id, const std::string &name) : Machine(id, name) {

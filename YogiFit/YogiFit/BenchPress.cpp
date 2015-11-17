@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "BenchPress.h"
 
 BenchPress::BenchPress(const int &id, const std::string &name) : Machine(id, name) {
