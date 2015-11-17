@@ -1,11 +1,11 @@
 #include "Treadmill.h"
 
-TreadMill::TreadMill(const int id, const std::string name, YogiFit::Machine_MachineType type) : Machine(id, name) {
-	Machine::_machine.set_type(type);
+Treadmill::Treadmill(const int &id, const std::string &name) : Machine(id, name) {
+	_machine.set_type(YogiFit::Machine_MachineType::Machine_MachineType_TREADMILL);
 }
 
-TreadMill::TreadMill(TreadMill &tm) : Machine(tm) {}
+Treadmill::Treadmill(Treadmill &tm) : Machine(tm) {}
 
-Machine* TreadMill::clone() {
-	return new TreadMill(*this);
+Machine* Treadmill::clone() {
+	return new Treadmill(*this);
 }

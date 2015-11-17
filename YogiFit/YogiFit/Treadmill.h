@@ -2,13 +2,13 @@
 
 #include "Machine.h"
 
-class TreadMill : public Machine {
+class Treadmill : public Machine {
 
 public:
 	
-	TreadMill(const int id, const std::string name, YogiFit::Machine_MachineType type);
-	TreadMill(TreadMill &tm);
-	~TreadMill(){}
+	Treadmill(const int &id, const std::string &name);
+	Treadmill(Treadmill &tm);
+	~Treadmill(){}
 
 	Machine* clone() override;
 };

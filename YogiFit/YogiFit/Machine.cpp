@@ -12,8 +12,12 @@ const std::string Machine::getMachineType() const {
 	switch (_machine.type()) {
 		case(YogiFit::Machine_MachineType::Machine_MachineType_BENCHPRESS) :
 			result = "Benchpress";
+			break;
 		case(YogiFit::Machine_MachineType::Machine_MachineType_TREADMILL) :
 			result = "Treadmill";
+			break;
+		default:
+			result = "";
 	}
 	return result;
 }

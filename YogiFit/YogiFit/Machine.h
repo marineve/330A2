@@ -5,7 +5,7 @@
 #include "MachineList.pb.h"
 
 using namespace std;
-static const string enumStrings[] = { "BenchPress", "TreadMill" };
+static const string enumStrings[] = { "Benchpress", "Treadmill" };
 
 class Machine {
 	friend class MachineFactory;

@@ -6,7 +6,7 @@ class BenchPress : public Machine {
 
 public: 
 	
-	BenchPress(const int id, const std::string name, YogiFit::Machine_MachineType type);
+	BenchPress(const int &id, const std::string &name);
 	BenchPress(BenchPress &bp);
 	~BenchPress(){}
 	
