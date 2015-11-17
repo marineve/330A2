@@ -1,0 +1,20 @@
+# 330A2
+SEng 330 Assignment 2 
+
+YogiFit is a gym machine tracking console application. A user may save a new machine to the system, or load and print a list of machines that currently exist in the system. The application was developed in C++ in Visual Studio 2013. The following tools were also used during development:
+* Google Protocol Buffers 2.6.1
+* Doxygen 1.8.10
+* Google Testing Framework 1.7.0
+
+Google Protocol Buffers was used to allow the application to store data and Google Testing Framework was used for testing. Doxygen generated complete html documentation for the program. 
+
+# Install Guide
+In order to install and run the application, Git must be installed. Ideally, Visual Studio should be installed as well. 
+
+Follow these steps to install and run the application:
+
+1. Clone the code from the repository using Git. The clone URL is https://github.com/marineve/330A2.git.
+2. Open the Visual Studio solution in Visual Studio: set the dropdown located below the "Help" option to "Debug" or "Release", then go to "Build" and select "Build Solution". This will build the solution.
+3. The application may be run from either Visual Studio or file explorer:
+** To run in Visual Studio, go to "Debug" and select "Start Without Debugging".
+** To run in the file explorer, go to <repos>\330A2\YogiFit\Release or <repos>\330A2\YogiFit\Debug and double click on YogiFitMain.exe. 
