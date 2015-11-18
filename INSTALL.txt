@@ -9,7 +9,7 @@ YogiFit is a gym machine tracking console application. A user may save a new mac
 Google Protocol Buffers was used to allow the application to store data and Google Testing Framework was used for testing. Doxygen generated complete html documentation for the program. 
 
 # Install Guide
-In order to install and run the application, Git must be installed. Ideally, Visual Studio should be installed as well. 
+In order to install and run the application, Git must be installed. Visual Studio should be installed as well. 
 
 Follow these steps to install and run the application:
 
